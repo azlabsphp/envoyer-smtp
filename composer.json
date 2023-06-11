@@ -1,5 +1,5 @@
 {
-    "name": "drewlabs/envoyer-symfony-mailer",
+    "name": "drewlabs/envoyer-smtp",
     "description": "SMTP drivers for envoyer client library",
     "type": "library",
     "keywords": [
