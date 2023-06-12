@@ -1,4 +1,4 @@
-# SMTP Drivers
+# Envoyer SMTP Drivers
 
 SMTP drivers provide implementations of `drewlabs/envoyer` driver or client interface that uses smtp protocol internally to send text message to send email messages.
 
