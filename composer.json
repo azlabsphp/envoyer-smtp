@@ -28,7 +28,7 @@
             "email": "asmyns.platonnas29@gmail.com"
         }
     ],
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "prefer-stable": true,
     "config": {
         "optimize-autoloader": true,
