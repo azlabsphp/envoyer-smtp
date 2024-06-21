@@ -17,24 +17,16 @@ use Drewlabs\Envoyer\Contracts\NotificationResult;
 
 class Result implements NotificationResult
 {
-    /**
-     * @var \DateTimeInterface
-     */
+    /** @var \DateTimeInterface */
     private $at;
 
-    /**
-     * @var int
-     */
+    /** @var int */
     private $id;
 
-    /**
-     * @var bool
-     */
+    /** @var bool */
     private $isOk;
 
-    /**
-     * @var string|null
-     */
+    /** @var string|null */
     private $exception;
 
     /**
