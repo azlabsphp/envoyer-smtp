@@ -34,7 +34,7 @@ class Result implements NotificationResult
      *
      * @param \Throwable $exception
      */
-    public function __construct(\DateTimeInterface $at = null, int $id = null, \Throwable $exception = null)
+    public function __construct(?\DateTimeInterface $at = null, ?int $id = null, ?\Throwable $exception = null)
     {
         $this->at = $at ?? new \DateTimeImmutable();
         $this->id = $id ?? (int) (time().random_int(1000, 100000));
@@ -47,7 +47,7 @@ class Result implements NotificationResult
      *
      * @return static
      */
-    public static function ok(\DateTimeInterface $at = null, int $id = null)
+    public static function ok(?\DateTimeInterface $at = null, ?int $id = null)
     {
         return new static($at, $id);
     }
@@ -59,7 +59,7 @@ class Result implements NotificationResult
      *
      * @return static
      */
-    public static function exception(\Throwable $exception = null, \DateTimeInterface $at = null, int $id = null)
+    public static function exception(?\Throwable $exception = null, ?\DateTimeInterface $at = null, ?int $id = null)
     {
         return new static($at, $id, $exception);
     }

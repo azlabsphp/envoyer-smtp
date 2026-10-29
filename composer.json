@@ -8,13 +8,13 @@
     ],
     "require": {
         "php": ">=7.0",
-        "drewlabs/envoyer-contracts": "^0.2.0",
+        "drewlabs/envoyer-contracts": "^0.2.5",
         "psr/http-message": "^2.0",
         "symfony/mailer": "^6.0|^7.0"
     },
     "require-dev": {
         "phpunit/phpunit": ">=6.0",
-        "drewlabs/envoyer": "^0.2.0"
+        "drewlabs/envoyer": "^0.2.7"
     },
     "license": "MIT",
     "autoload": {

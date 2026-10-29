@@ -3,3 +3,5 @@ vendor/
 .editorconfig
 .DS_Store
 tests/contents/
+/.phpunit.cache
+/.phpunit.result.cache

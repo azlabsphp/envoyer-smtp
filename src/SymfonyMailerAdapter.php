@@ -99,7 +99,7 @@ class SymfonyMailerAdapter implements ClientInterface
     /**
      * Creates attachment traversable instance.
      *
-     * @throws RuntimeException
+     * @throws \RuntimeException
      *
      * @return \Traversable<array<string,string,string>>
      */
@@ -172,12 +172,10 @@ class SymfonyMailerAdapter implements ClientInterface
             return 'sendmail://default';
         }
 
-        // #region Enforce the mailer to use tls encryption if the server encryption is tls
         $protocol = 'smtp';
         if ($server instanceof EncryptionAware && \in_array(strtolower($server->getEncryption()), static::SSL_ENCRYPTION, true)) {
             $protocol = 'smtps';
         }
-        // #endregion Enforce the mailer to use tls encryption if the server encryption is tls
 
         return "$protocol://$user:$password@$host:$port";
     }
